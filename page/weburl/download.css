@@ -1,0 +1,66 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+#baseview{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: rgb(255, 220, 225);
+    background-color: rgb(255, 220, 225);
+    overflow: hidden;
+}
+#bottomdiscriptionimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+.bottom_button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    height: 40px;
+    width: 60%;
+    color: white;
+    background-color: #ff3f8b;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 300px;
+}
+
+#qrcodeimg-fugai{
+    display: flex;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+}
+#safariImg{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 300px; 
+    height: 150px; 
+    margin-top: 5px;
+    right: 20px;
+    position: absolute;
+}
+#windowImg{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 200px; 
+    height: 200px; 
+    margin-top: 5px;
+    right: 20px;
+    position: absolute;
+}

@@ -1,0 +1,208 @@
+#headdiscriptionimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 42px;
+    width: 327px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+.xunititle{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.headimg{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#baseview{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#first_textview{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+.headtitle{
+    display: flex;
+    justify-content: center;
+    height: 16px;
+    padding: 0;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.secondtitle{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.discriptiontitle{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.futitle{
+    display: flex;
+    justify-content: center;
+    height: 12px;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 5px; 
+}
+#title_import{
+    color: red;
+}
+#upimg{
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    width: 18px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+.downimg{
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    width: 18px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#qrcodebaseview{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 20px;
+    position: relative;
+}
+#qrcodeimg{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#qrcodeimg-fugai{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 180px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    background: rgba(225,225,225,0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+#zhiwenbaseview{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+}
+#zhiwenimg{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#zhiwenimg-fugai{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    background: rgba(225,225,225,0.8);
+}
+#bottomdiscriptionimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    height: 111px;
+    width: 334px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#video_player{
+    display: flex;
+    justify-content: center;
+    height: 378px;
+    width: 218px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+#iframeImg{
+    display: flex;
+    justify-content: center;
+    height: 378px;
+    width: 218px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}

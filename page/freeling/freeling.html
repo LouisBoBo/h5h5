@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>免费领美衣</title>
+    <link rel="stylesheet" href="freeling.css">
+</head>
+
+<body>
+    <div id="baseview">
+        <img id="headdiscriptionimg" src="../icon/freeling_headImage.png" alt="">
+        <img src="../icon/xuxian.jpg" alt="">
+        <div id="first_textview">
+            <img style="margin-top: 2px; margin-right: 10px;width: 17px;height: 17px" src="../icon/first.jpg" alt="">
+            <div class="title">新用户加衣蝠小助理微信</div>
+        </div>
+        <img id="upimg" src="../icon/down.png" alt="">
+        <div id="qrcodebaseview">
+            <img id="qrcodeimg" src="" alt="">
+            <!-- <div style="display:displayname;visibility: visibilityname" id="qrcodeimg-fugai">请先浏览完本页，并点底部"同意小助理在群内推荐新款"按钮后，再扫码加微信</div> -->
+        </div>
+        <div id="zhiwenbaseview">
+            <img id="zhiwenimg" src="../icon/zhiwen.png" alt="">
+            <!-- <div id="zhiwenimg-fugai"></div> -->
+        </div>
+        <div class="futitle">长按识别二维码加我微信</div>
+        <img class="downimg" src="../icon/down.png" alt="">
+        <div id="first_textview">
+            <img style="margin-top: 2px; margin-right: 10px;width: 18px;height: 18px" src="../icon/second.jpg" alt="">
+            <div class="title">并把她拉进3个不低于50人的群</div>
+        </div>
+        <img class="downimg" src="../icon/down.png" alt="">
+        <div class="title">即可向微信客服申请<span style="color: red;font-weight: bold;font-size: 18px;">15元</span>微信红包，</div>
+        <div class="discriptiontitle">红包直接打入您的微信零钱哦!</div>
+        <img src="../icon/xuxian.jpg" alt="">
+        <img id="bottomdiscriptionimg" src="../icon/freeling_bottomImage.png" alt="">
+
+        <div id="first_textview">
+            <img style="margin-top: 2px; margin-right: 6px;width: 17px;height: 17px" src="https://www.incursion.wang//small-iconImages/heboImg/daosanjiao.png" alt="">
+            <div class="title">点下方了解详情</div>
+        </div>
+        <a id="video_player" href="../../index.html"><img id="iframeImg" src="../icon/freeling_playImage.png" alt=""> </a>
+
+        <img id="bottom_button" src="../icon/freeling_hidefugai.png"  onclick="hide_fugai()"alt="">
+        <style>
+            #bottom_button{
+                display: flex;
+                margin-top: 27px;
+                margin-bottom: 20px;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                align-self: center;
+                width:269px;
+                height:50px;
+                background-color:#E3E3E3;
+                border-radius: 25px;
+                box-shadow: 0 0 10px rgba(0,0,0,.3) inset;
+                -webkit-animation-name:'ripple';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+                -webkit-animation-duration: 1.1s;/*动画持续时间*/
+                -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+                -webkit-animation-delay: 0.1s;/*动画延迟时间*/
+                -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+                -webkit-animation-direction: alternate;/*定义动画方式*/
+            }
+            @keyframes ripple {
+                from{
+                    transform: scale(1.0);
+                }
+                to{
+                    transform: scale(1.2);
+                }
+                from{
+                    transform: scale(1.2);
+                }
+                to{
+                    transform: scale(1.0);
+                }
+            }
+        </style>
+    </div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/core.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="freeling.js"></script>
+    <script type="text/javascript" src="../../first.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>衣蝠</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="download.css">
+    
+</head>
+<body>
+    <div id="baseview">
+        <img id="bottomdiscriptionimg" src="https://www.incursion.wang/H5/public/img/download/download1-img.png" alt="">
+
+         <div id="bottom_button" onclick="hide_fugai()">下载衣蝠APP</div>
+         <style>
+            #bottom_button{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                align-self: center;
+                height: 40px;
+                width: 60%;
+                color: white;
+                background-color: #ff3f8b;
+                border-radius: 10px;
+                font-size: 18px;
+                margin-bottom: 300px;
+                -webkit-animation-name:'ripple';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+                -webkit-animation-duration: 0.7s;/*动画持续时间*/
+                -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+                -webkit-animation-delay: 0.1s;/*动画延迟时间*/
+                -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+                -webkit-animation-direction: alternate;/*定义动画方式*/
+            }
+            @keyframes ripple {
+                from{
+                    transform: scale(1.0);
+                }
+                to{
+                    transform: scale(1.2);
+                }
+                from{
+                    transform: scale(1.2);
+                }
+                to{
+                    transform: scale(1.0);
+                }
+            }
+        </style>
+
+        <div style="display:none;visibility: hidden" id="qrcodeimg-fugai">
+             <img id="safariImg" style="display:none;visibility: hidden" src="" alt="">
+             <img id="windowImg" style="display:none;visibility: hidden" src="" alt="">
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="download.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script>
+		var channel;
+		var appName ="YJApp_3.8.4_384_6_6_sign";
+	</script>
+</body>
+</html>

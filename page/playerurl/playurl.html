@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="playurl.css">
+</head>
+
+<body>
+    <div id="baseview">
+        <video id="myiframe" controls="controls" preload="preload" autoplay="autoplay">
+            <source src="https://www.incursion.wang/freeBuy/Video/20190812175713%2000_00_00-00_01_55_20.mp4?openid=oN3cT0abCnZIvPEOO604Hy7TyBpk" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="playurl.js"></script>
+    <script type="text/javascript" src="../../first.js"></script>
+    <!-- 处理其它浏览器不能自动播放的问题 -->
+    <script>
+        //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以 
+        document.getElementById('player').play();
+
+        //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+        document.addEventListener('WeixinJSBridgeReady', function () {
+            document.getElementById('player').play()
+        });
+
+        document.addEventListener('touchstart', function () {
+            document.getElementById('player').play()
+        });
+    </script>
+</body>
+
+</html>
