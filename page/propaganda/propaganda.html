@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>免费领美衣</title>
+    <link rel="stylesheet" href="propaganda.css">
+</head>
+
+<body>
+      <div id="baseview">
+          <div class="title">仅需<span style="color: red;font-weight: bold;font-size: 18px;margin-top: 2px;">3</span>步，即可申请智能小助理，月赚千元佣金</div>
+          <img src="../icon/xuxian.jpg" alt="">
+
+          <div id="first_textview">
+              <img style="margin-top: 2px; margin-right: 10px;width: 17px;height: 17px" src="../icon/first.jpg" alt="">
+              <div class="title">扫码加小助理为微信好友</div>
+          </div>
+          <img id="upimg" src="../icon/down.png" alt="">
+          <div id="qrcodebaseview">
+              <img id="qrcodeimg" src="../icon/propaganda_wxcode.jpg" alt="">
+          </div>
+          <div id="zhiwenbaseview">
+              <img id="zhiwenimg" src="../icon/zhiwen.png" alt="">
+          </div>
+          
+          <div id="first_textview">
+              <img style="margin-top: 2px; margin-right: 10px;width: 18px;height: 18px" src="../icon/second.jpg" alt="">
+              <div class="title">新建一个自己粉丝群(建议不低于30人)</div>
+          </div>
+          <div class="title" style="margin-top: -10px;">把小助理也拉入群后@小助理</div>
+          <img class="downimg" src="../icon/down.png" alt="">
+          <img id="addfirend" src="../icon/propaganda_addfriend.png">
+
+          <div id="first_textview">
+            <img style="margin-top: 2px; margin-right: 10px;width: 18px;height: 18px" src="../icon/three.png" alt="">
+            <div class="title">上传验证图，客服半小时内验证通过</div>
+        </div>
+        <div class="title" style="margin-top: -10px;">任务完成，验证图示例</div>
+        <!-- <img class="downimg" src="../icon/down.png" alt=""> -->
+
+          <!-- <div class="title">即可向微信客服申请<span style="color: red;font-weight: bold;font-size: 18px;">15元</span>微信红包，</div>
+          <div class="discriptiontitle">红包直接打入您的微信零钱哦!</div> -->
+
+          <!-- 上传图片界面 -->
+          <div class="baseupview">
+            <img class="upview1" src="../icon/propaganda_friendlist.png" alt="">
+            <div class="upview2" style="background-color: rgb(251, 251, 251);">
+              <!-- <div> -->
+                <img id="preview" src="../icon/propaganda_photo.png" style="height: 100%;width: 100%;object-fit: contain;">
+                <!-- <img id="addview" style="height: 100px;width: 100px;"> -->
+                <form id="form" method="POST" enctype="multipart/form-data" action="upload" onsubmit="return check();">
+                  <input type="file" accept="image/*" name="" id="file"/>
+                </form>
+              <!-- </div> -->
+            </div>
+
+          </div>
+
+          <img src="../icon/xuxian.jpg" alt="">
+          <img id="bottomdiscriptionimg" src="../icon/propaganda_raward.png" alt="">
+
+          <div id="first_textview">
+              <img style="margin-top: 2px; margin-right: 6px;width: 17px;height: 17px" src="https://www.incursion.wang//small-iconImages/heboImg/daosanjiao.png" alt="">
+              <div class="title">点下方了解详情</div>
+          </div>
+          <a id="video_player" href="../../index.html"><img id="iframeImg" src="../icon/freeling_playImage.png" alt=""> </a>
+
+          <img id="bottom_button" src="../icon/freeling_hidefugai.png"  onclick="hide_fugai()" alt="" > 
+          
+      </div>
+
+      <!-- 上传图片 -->
+      <script>
+        // var addviewDom = doucment.getElementById("addview");
+        var fileDom = document.getElementById("file");
+        var previewDom = document.getElementById("preview");
+        
+        fileDom.addEventListener("change", e => {
+          var file = fileDom.files[0];
+          // check if input contains a valid image file
+          if (!file || file.type.indexOf("image/") < 0) {
+            fileDom.value = "";
+            previewDom.src = "";
+            return;
+          }
+
+          // use FileReader to load image and show preview of the image
+          var fileReader = new FileReader();
+          fileReader.onload = e => {
+            previewDom.src = e.target.result;
+          };
+          fileReader.readAsDataURL(file);
+        });
+
+        var formDom = document.getElementById("form");
+        function check() {
+          
+          var file = fileDom.files[0];
+          // check if input contains a valid image file
+          if (!file || file.type.indexOf("image/") < 0) {
+            return false;
+          }
+          return true;
+        }
+      </script>
+
+      <!-- 轻提示 -->
+      <script>  
+        function showToast(msg,duration){  
+          duration=isNaN(duration)?3000:duration;  
+          var m = document.createElement('div');  
+          m.innerHTML = msg;  
+          m.style.cssText="width:20%; min-width:180px; background:#000; opacity:0.6; height:auto;min-height: 40px; color:#fff; line-height:40px; text-align:center; border-radius:4px; position:fixed; top:60%; left:40%; z-index:999999;";  
+          document.body.appendChild(m);  
+          setTimeout(function() {  
+              var d = 0.5;  
+              m.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';  
+              m.style.opacity = '0';  
+              setTimeout(function() { document.body.removeChild(m) }, d * 1000);  
+          }, duration);  
+        }  
+      
+        function hide_fugai(){
+          var previewDom = document.getElementById("preview");
+          if(previewDom.src.indexOf('propaganda_photo.png') !=-1)
+          {
+            showToast("请上传图片！",3000);
+          }else{
+            showToast("上传成功等待审核！",3000);
+          }
+        }
+      </script>  
+
+      <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/core.js"></script>
+      <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+      <script type="text/javascript" src="freeling.js"></script>
+      <script type="text/javascript" src="../../first.js"></script>
+</body>
+
+</html>
