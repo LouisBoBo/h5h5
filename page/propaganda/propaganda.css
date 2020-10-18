@@ -9,6 +9,10 @@
   align-items: center;
   align-self: center;
 }
+.headertitle{
+  display: flex;
+  flex-direction: row;
+}
 .xunititle{
   display: flex;
   justify-content: center;
@@ -68,6 +72,7 @@
   font-size: 18px;
   margin-bottom: 20px;
   margin-top: 15px;
+  word-wrap: break-word;
 }
 .discriptiontitle{
   display: flex;
@@ -221,8 +226,8 @@
 .baseupview{
   display: flex;
   flex-direction: row;
-  width: 440px;
-  height: 407px;
+  width: 352px;
+  height: 327px;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -275,7 +280,8 @@
   align-self: center;
   width:269px;
   height:50px;
-  background-color:#E3E3E3;
+  background-color:#ff3f8b;
+  color: white;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0,0,0,.3) inset;
   -webkit-animation-name:'ripple';/*动画属性名，也就是我们前面keyframes定义的动画名*/

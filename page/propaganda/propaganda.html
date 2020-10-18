@@ -11,7 +11,8 @@
 
 <body>
       <div id="baseview">
-          <div class="title">仅需<span style="color: red;font-weight: bold;font-size: 18px;margin-top: 2px;">3</span>步，即可申请智能小助理，月赚千元佣金</div>
+          <div class="title">仅<p style="color: red;font-weight: bold;font-size: 18px;margin-top: 2px;">3</p>步，即可申请智能小助理，月赚千元佣金</div>
+
           <img src="../icon/xuxian.jpg" alt="">
 
           <div id="first_textview">
@@ -68,8 +69,8 @@
           </div>
           <a id="video_player" href="../../index.html"><img id="iframeImg" src="../icon/freeling_playImage.png" alt=""> </a>
 
-          <img id="bottom_button" src="../icon/freeling_hidefugai.png"  onclick="hide_fugai()" alt="" > 
-          
+          <!-- <img id="bottom_button" src=""  onclick="hide_fugai()" alt="" >  -->
+          <div id="bottom_button" onclick="hide_fugai()">提交审核</div>
       </div>
 
       <!-- 上传图片 -->
@@ -113,7 +114,7 @@
           duration=isNaN(duration)?3000:duration;  
           var m = document.createElement('div');  
           m.innerHTML = msg;  
-          m.style.cssText="width:20%; min-width:180px; background:#000; opacity:0.6; height:auto;min-height: 40px; color:#fff; line-height:40px; text-align:center; border-radius:4px; position:fixed; top:60%; left:40%; z-index:999999;";  
+          m.style.cssText="width:40%; background:#000; opacity:0.6; height:auto;min-height: 40px; color:#fff; line-height:40px; text-align:center; border-radius:4px; position:fixed; top:70%; left:30%; z-index:999999;";  
           document.body.appendChild(m);  
           setTimeout(function() {  
               var d = 0.5;  
