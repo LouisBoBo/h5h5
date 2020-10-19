@@ -263,6 +263,7 @@
   text-emphasis-color: darkgray;
   position: absolute;
   appearance:none;
+  opacity: 0;
 }
 #addview{
   width: 100px;
