@@ -9,10 +9,10 @@ html,body{
     padding: 0;
     position: relative;
     color: rgb(255, 220, 225);
-    background-color: rgb(255, 220, 225);
+    /* background-color: rgb(255, 220, 225); */
     overflow: hidden;
 }
-#bottomdiscriptionimg{
+/* #bottomdiscriptionimg{
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -21,6 +21,16 @@ html,body{
     align-content: center;
     align-items: center;
     align-self: center;
+} */
+#bottomdiscriptionimg{
+  display: flex;
+  justify-content: center;
+  /* margin-top: 40px; */
+  margin-bottom: 50px;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  align-self: center;
 }
 .bottom_button{
     display: flex;
